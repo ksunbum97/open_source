@@ -7,6 +7,7 @@ num2=`cat num2.txt`
 num_arr[0]=$num1
 num_arr[1]=$num2
 echo "project management in github" 
+
 if [ $# -eq 0 ]; then
 	echo "...non operator parameter..."
 
