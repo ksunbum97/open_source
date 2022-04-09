@@ -52,8 +52,8 @@ if __name__ == '__main__':
     for word in temp2:
         count_list[word] = temp.count(word)
     count_list = sorted(count_list.items(), key= lambda x: x[1], reverse=True)
-    cnt = 1
+    cnt = 0
     for word, count in count_list:
-        print(str(word).ljust(5), str(count).rjust(5))
+        print(str(word).ljust(8), str(count).rjust(8))
         cnt+=1
         if cnt == num: break
