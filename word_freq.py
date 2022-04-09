@@ -3,7 +3,7 @@ import sys
 
 if __name__ == '__main__':
     file_name = str(sys.argv[1])
-    num = sys.argv[2]
+    num = int(sys.argv[2])
     
     f=open(file_name, 'r')
     lines = []
