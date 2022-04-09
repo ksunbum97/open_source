@@ -2,10 +2,9 @@
 import sys
 
 if __name__ == '__main__':
-    file_name = str(sys.argv[0])
-    num = sys.argv[1]
-    print(file_name)
-    print(num)
+    file_name = str(sys.argv[1])
+    num = sys.argv[2]
+    
     f=open(file_name, 'r')
     lines = []
     while True:
