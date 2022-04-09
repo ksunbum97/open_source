@@ -4,7 +4,8 @@ import sys
 if __name__ == '__main__':
     file_name = str(sys.argv[0])
     num = sys.argv[1]
-
+    print(file_name)
+    print(num)
     f=open(file_name, 'r')
     lines = []
     while True:
@@ -56,4 +57,4 @@ if __name__ == '__main__':
     for word, count in count_list:
         print(str(word).ljust(5), str(count).rjust(5))
         cnt+=1
-        if cnt == int(num): break
+        if cnt == num: break
