@@ -18,7 +18,7 @@ if __name__ == '__main__':
     for i in range(len(lines)):
         lines[i] = lines[i].split()
         for j in range(len(lines[i])):
-            lines[i][j] = ''.join(x for x in lines[i][j] if x.isalnum())
+            lines[i][j] = ''.join(filter(str.isalnum, lines[i])
             temp.append(lines[i][j])
     
     temp2 = list(temp)
